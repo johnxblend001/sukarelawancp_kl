@@ -1,0 +1,226 @@
+.navBar {
+  background-color: var(--color-bg-white);
+  border-bottom: 1px solid var(--color-border-light);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+/* Brand Lockup */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  max-width: calc(100% - 56px);
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logoImg {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brandTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.brandSubtitle {
+  font-size: 0.78125rem;
+  font-weight: 600;
+  color: #2D3748;
+  white-space: nowrap;
+}
+
+.brandAcronym {
+  font-size: 0.71875rem;
+  font-weight: 700;
+  color: var(--color-brand-primary);
+}
+
+/* Desktop Navigation */
+.desktopNav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.navLink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #2D3748;
+  padding: 6px 0;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.navLink:hover {
+  color: var(--color-brand-primary);
+}
+
+.navLinkActive {
+  color: var(--color-brand-primary) !important;
+  font-weight: 700 !important;
+}
+
+.navLinkActive::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--color-brand-primary);
+  border-radius: 1px;
+}
+
+/* Action Area */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.donateBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #386641;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.donateBtn:hover {
+  background-color: #27492D;
+}
+
+.donateIcon {
+  color: #E8F5E9;
+}
+
+/* Mobile Toggle */
+.mobileMenuToggle {
+  display: none;
+  padding: 8px;
+  color: #1A1A1A;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile Drawer */
+.mobileDrawer {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .donateBtn {
+    display: none;
+  }
+
+  .mobileMenuToggle {
+    display: inline-flex;
+  }
+
+  .mobileDrawer {
+    display: block;
+    background-color: var(--color-bg-white);
+    border-top: 1px solid var(--color-border-light);
+    border-bottom: 1px solid var(--color-border-light);
+    padding: var(--space-4) var(--container-padding);
+    box-shadow: var(--shadow-md);
+  }
+
+  .mobileNavList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .mobileNavLink {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-border-subtle);
+  }
+
+  .mobileActionItem {
+    padding-top: var(--space-2);
+  }
+
+  .mobileDonateBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    width: 100%;
+    background-color: #386641;
+    color: #FFFFFF;
+    padding: 10px 16px;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 56px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .brand {
+    gap: 8px;
+  }
+  .logoImg {
+    width: 36px;
+    height: 36px;
+  }
+  .brandTitle {
+    font-size: 0.75rem;
+  }
+  .brandSubtitle {
+    font-size: 0.65rem;
+  }
+  .brandAcronym {
+    font-size: 0.59rem;
+  }
+}

@@ -1,0 +1,336 @@
+/* Sukarelawan Page Styles - Malaysian NGO Editorial Aesthetic */
+
+.sectionWhy {
+  padding: 5rem 0;
+  background-color: var(--color-surface-white);
+}
+
+.whyHeader {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 3.5rem;
+}
+
+.sectionLabel {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.sectionHeading {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  color: var(--color-text-main);
+  margin-bottom: 1rem;
+}
+
+.sectionSub {
+  font-size: 1.0625rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.whyCard {
+  background-color: var(--color-surface-cream);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whyCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+
+.whyIconWrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(45, 106, 79, 0.12);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.whyCardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 0.75rem;
+}
+
+.whyCardText {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Roles Section */
+.sectionRoles {
+  padding: 5rem 0;
+  background-color: var(--color-surface-light-green);
+}
+
+.rolesHeader {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 3.5rem;
+}
+
+.rolesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.roleCard {
+  background-color: var(--color-surface-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xs);
+}
+
+.roleTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.roleIconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roleBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px;
+}
+
+.roleTitle {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 0.75rem;
+}
+
+.roleDesc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.roleMetaList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background-color: var(--color-surface-cream);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-primary);
+  font-size: 0.875rem;
+}
+
+.roleMetaList li {
+  line-height: 1.5;
+  color: var(--color-text-main);
+}
+
+.roleMetaList strong {
+  color: var(--color-primary-dark);
+}
+
+.roleActionBtn {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.roleActionBtn:hover {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* Orientation Briefing Banner */
+.sectionOrientation {
+  padding: 4rem 0;
+  background-color: var(--color-surface-white);
+}
+
+.orientContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  background-color: var(--color-surface-cream);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 3rem;
+}
+
+.orientMedia {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.orientImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.orientContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.orientHeading {
+  font-size: 1.875rem;
+  line-height: 1.3;
+  color: var(--color-text-main);
+}
+
+.orientText {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.orientPoints {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.orientPoints li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-main);
+  line-height: 1.5;
+}
+
+.orientCheckIcon {
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* Form Section */
+.sectionForm {
+  padding: 5rem 0;
+  background-color: var(--color-surface-light-green);
+  scroll-margin-top: 2rem;
+}
+
+.formWrapper {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: var(--color-surface-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 3rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.formHeading {
+  font-size: 2rem;
+  color: var(--color-text-main);
+  margin-bottom: 0.75rem;
+}
+
+.formSub {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .whyGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .rolesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .orientContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .formWrapper {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionWhy,
+  .sectionRoles,
+  .sectionOrientation,
+  .sectionForm {
+    padding: 3.5rem 0;
+  }
+
+  .sectionHeading,
+  .orientHeading,
+  .formHeading {
+    font-size: 1.625rem;
+  }
+}
