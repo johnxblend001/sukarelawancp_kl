@@ -5,6 +5,7 @@ import PageHeader from '../../components/ui/PageHeader';
 import Image from 'next/image';
 import styles from './tentang-kami.module.css';
 import { ShieldCheckIcon, UsersIcon, HeartIcon } from '../../components/ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export const metadata = {
   title: 'Tentang Kami — PSKCP (Persatuan Sukarelawan Komuniti Cerebral Palsy)',
@@ -142,7 +143,7 @@ export default function AboutPage() {
 
             <div className={styles.historyMedia}>
               <Image
-                src="/images/hero-community.jpg"
+                src={getAssetPath('/images/hero-community.jpg')}
                 alt="Aktiviti bersama keluarga dan sukarelawan PSKCP"
                 width={520}
                 height={360}

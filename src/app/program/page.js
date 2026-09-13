@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './program.module.css';
 import { UsersIcon, GearIcon, MegaphoneIcon, CalendarIcon, ArrowRightIcon } from '../../components/ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export const metadata = {
   title: 'Program & Aktiviti — PSKCP',
@@ -55,7 +56,7 @@ export default function ProgramsPage() {
             <article id="program-sokongan" className={styles.pillarItem}>
               <div className={styles.pillarMedia}>
                 <Image
-                  src="/images/program-sokongan.jpg"
+                  src={getAssetPath('/images/program-sokongan.jpg')}
                   alt="Ibu dan anak dalam sesi sokongan keluarga"
                   width={540}
                   height={340}
@@ -86,7 +87,7 @@ export default function ProgramsPage() {
             <article id="program-aktiviti" className={`${styles.pillarItem} ${styles.reverse}`}>
               <div className={styles.pillarMedia}>
                 <Image
-                  src="/images/program-aktiviti.jpg"
+                  src={getAssetPath('/images/program-aktiviti.jpg')}
                   alt="Sukarelawan membimbing belia CP dalam aktiviti kemahiran"
                   width={540}
                   height={340}
@@ -117,7 +118,7 @@ export default function ProgramsPage() {
             <article id="program-advokasi" className={styles.pillarItem}>
               <div className={styles.pillarMedia}>
                 <Image
-                  src="/images/program-advokasi.jpg"
+                  src={getAssetPath('/images/program-advokasi.jpg')}
                   alt="Sesi ceramah advokasi kesedaran cerebral palsy"
                   width={540}
                   height={340}

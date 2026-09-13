@@ -15,6 +15,7 @@ import {
   CheckCircleIcon,
   ArrowRightIcon,
 } from '../../components/ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export const metadata = {
   title: 'Menjadi Sukarelawan — PSKCP',
@@ -189,7 +190,7 @@ export default function VolunteerPage() {
             <div className={styles.orientContainer}>
               <div className={styles.orientMedia}>
                 <Image
-                  src="/images/volunteer-team.jpg"
+                  src={getAssetPath('/images/volunteer-team.jpg')}
                   alt="Sesi taklimat orientasi sukarelawan PSKCP"
                   width={560}
                   height={360}

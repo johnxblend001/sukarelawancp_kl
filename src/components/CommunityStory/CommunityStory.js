@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './CommunityStory.module.css';
 import { CameraIcon, ArrowRightIcon, QuoteIcon } from '../ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export default function CommunityStory() {
   return (
@@ -11,7 +12,7 @@ export default function CommunityStory() {
         <div className={styles.imageColumn}>
           <div className={styles.imageWrapper}>
             <Image
-              src="/images/story-afiq.jpg"
+              src={getAssetPath('/images/story-afiq.jpg')}
               alt="Afiq, seorang remaja cerebral palsy, berkongsi senyuman ceria bersama sukarelawan PSKCP semasa program di Klang"
               width={560}
               height={410}

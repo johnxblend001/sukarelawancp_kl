@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Hero.module.css';
 import { ArrowRightIcon, ShieldCheckIcon } from '../ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export default function Hero() {
   return (
@@ -42,7 +43,7 @@ export default function Hero() {
         <div className={styles.imageWrapper}>
           <div className={styles.imageCard}>
             <Image
-              src="/images/hero-community.jpg"
+              src={getAssetPath('/images/hero-community.jpg')}
               alt="Sukarelawan PSKCP berinteraksi mesra dengan seorang belia cerebral palsy berkerusi roda semasa aktiviti inklusi komuniti"
               width={520}
               height={370}

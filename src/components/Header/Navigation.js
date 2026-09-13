@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Navigation.module.css';
 import { MenuIcon, CloseIcon, HeartIcon } from '../ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function Navigation() {
         <Link href="/" className={styles.brand} aria-label="Laman Utama PSKCP">
           <div className={styles.logoWrapper}>
             <Image
-              src="/images/logo-pskcp-transparent.png"
+              src={getAssetPath('/images/logo-pskcp-transparent.png')}
               alt="Logo Rasmi Persatuan Sukarelawan Komuniti Cerebral Palsy"
               width={54}
               height={54}

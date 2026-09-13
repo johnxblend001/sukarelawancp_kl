@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/sukarelawancp_kl' : '';
 
 const nextConfig = {
   reactStrictMode: true,
   output: 'export',
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || (isProd ? '/sukarelawancp_kl' : ''),
+  basePath: basePath,
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   images: {
     unoptimized: true,
   },

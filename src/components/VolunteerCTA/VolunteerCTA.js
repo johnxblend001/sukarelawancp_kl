@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './VolunteerCTA.module.css';
 import { ArrowRightIcon } from '../ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export default function VolunteerCTA() {
   return (
@@ -11,7 +12,7 @@ export default function VolunteerCTA() {
           {/* Hands Graphic */}
           <div className={styles.handsWrapper} aria-hidden="true">
             <Image
-              src="/images/volunteer-hands.png"
+              src={getAssetPath('/images/volunteer-hands.png')}
               alt=""
               width={80}
               height={52}

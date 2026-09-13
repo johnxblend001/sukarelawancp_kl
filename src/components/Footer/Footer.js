@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Footer.module.css';
 import { PhoneIcon, MailIcon, MapPinIcon, InfoIcon, ArrowUpIcon } from '../ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -19,7 +20,7 @@ export default function Footer() {
           <div className={styles.identityCol}>
             <div className={styles.logoRow}>
               <Image
-                src="/images/logo-pskcp-transparent.png"
+                src={getAssetPath('/images/logo-pskcp-transparent.png')}
                 alt="Logo PSKCP"
                 width={52}
                 height={52}

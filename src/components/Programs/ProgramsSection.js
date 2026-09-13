@@ -2,13 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './Programs.module.css';
 import { UsersIcon, GearIcon, MegaphoneIcon, ArrowRightIcon } from '../ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export default function ProgramsSection() {
   const programs = [
     {
       id: 'sokongan',
       title: 'Sokongan Keluarga',
-      image: '/images/program-sokongan.jpg',
+      image: getAssetPath('/images/program-sokongan.jpg'),
       alt: 'Ibu mendampingi dan memberikan sokongan penuh kasih sayang kepada anak cerebral palsy',
       icon: <UsersIcon size={22} className={styles.cardIcon} />,
       description: 'Bimbingan, kaunseling, dan rangkaian sokongan untuk ibu bapa dan penjaga.',
@@ -17,7 +18,7 @@ export default function ProgramsSection() {
     {
       id: 'aktiviti',
       title: 'Aktiviti & Kemahiran',
-      image: '/images/program-aktiviti.jpg',
+      image: getAssetPath('/images/program-aktiviti.jpg'),
       alt: 'Sukarelawan membimbing remaja cerebral palsy dalam latihan kemahiran motorik dan sosial',
       icon: <GearIcon size={22} className={styles.cardIcon} />,
       description: 'Program terapi, latihan kemahiran, aktiviti sosial dan riadah untuk meningkatkan keyakinan diri.',
@@ -26,7 +27,7 @@ export default function ProgramsSection() {
     {
       id: 'advokasi',
       title: 'Advokasi & Kesedaran',
-      image: '/images/program-advokasi.jpg',
+      image: getAssetPath('/images/program-advokasi.jpg'),
       alt: 'Sesi ceramah kesedaran komuniti PSKCP mengenai penerimaan dan hak cerebral palsy',
       icon: <MegaphoneIcon size={22} className={styles.cardIcon} />,
       description: 'Memperjuang hak, kesaksamaan dan penerimaan komuniti terhadap individu cerebral palsy.',

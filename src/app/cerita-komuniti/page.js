@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './cerita-komuniti.module.css';
 import { QuoteIcon, ArrowRightIcon, HeartIcon, MailIcon } from '../../components/ui/Icons';
+import { getAssetPath } from '@/utils/assets';
 
 export const metadata = {
   title: 'Cerita & Suara Komuniti — PSKCP',
@@ -16,7 +17,7 @@ export default function StoriesPage() {
   const stories = [
     {
       id: 'danial',
-      image: '/images/story-danial.jpg',
+      image: getAssetPath('/images/story-danial.jpg'),
       tag: 'Kanak-Kanak & Terapi Seni',
       tagClass: styles.tagTeal,
       title: 'Danial Menemui Keceriaan & Keyakinan Diri Melalui Warna',
@@ -26,7 +27,7 @@ export default function StoriesPage() {
     },
     {
       id: 'aisyah',
-      image: '/images/story-aisyah.jpg',
+      image: getAssetPath('/images/story-aisyah.jpg'),
       tag: 'Belia & Berdikari',
       tagClass: styles.tagGold,
       title: 'Aisyah: Melakar Kerjaya Reka Grafik Bebas Tanpa Batasan',
@@ -36,7 +37,7 @@ export default function StoriesPage() {
     },
     {
       id: 'farid',
-      image: '/images/volunteer-hands.png',
+      image: getAssetPath('/images/volunteer-hands.png'),
       tag: 'Refleksi Sukarelawan',
       tagClass: styles.tagBlue,
       title: 'Cikgu Farid: 4 Tahun Belajar Erti Kesabaran & Syukur Sebenar',
@@ -64,7 +65,7 @@ export default function StoriesPage() {
               <div className={styles.featuredMedia}>
                 <div className={styles.featuredImageWrapper}>
                   <Image
-                    src="/images/story-afiq.jpg"
+                    src={getAssetPath('/images/story-afiq.jpg')}
                     alt="Afiq bersama ibunya Puan Siti Rohana"
                     width={560}
                     height={400}
